@@ -204,21 +204,26 @@ width: 100%;
 z-index: 99;
 }
 
-.hulu-logo {
-  max-height: 4rem;
-  vertical-align: middle;
-}
 
 .top-links {
   text-align: center;
+
+}
+
+.top-links a:last-of-type{
+  padding-left: 0rem;
+
+}
+
+.sm-link-top {
+  height: 3.42rem;
+}
+
+.sm-link-top {
+  padding-right: 0;
   vertical-align: middle;
-}
 
-.sm-i {
-  height: 2.4rem;
-  padding: 0 1.6rem;
 }
-
 
 .link {
   font-family: source-sans-pro, sans-serif;
@@ -475,6 +480,20 @@ footer {
   max-width: 20rem;
   text-align: center;
   margin-bottom: 2.4rem;
+}
+
+.sm-link img{
+  height: 3.2rem;
+
+}
+
+.sm-link:last-of-type {
+  padding-left: 2.4rem;
+
+}
+
+.updates p {
+  padding-bottom: 2.4rem;
 }
 
 .footer-text {
