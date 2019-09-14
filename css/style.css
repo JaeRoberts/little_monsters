@@ -1,0 +1,525 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FED919;
+  display: grid;
+  grid-template-areas:
+    "cd-auto-hide-header"
+    "main"
+    "footer";
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 10%;
+  width: 80%;
+}
+
+
+/******Typography*********/
+p {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-family: source-serif-pro, serif;
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  max-width: 98rem;
+  padding-bottom: 3.2rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: source-serif-pro, serif;
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  max-width: 98rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  padding-top: 2.4rem;
+  text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+h1 {
+  font-family: source-serif-pro, serif;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  max-width: 98rem;
+  padding-bottom: 3.2rem;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: source-serif-pro, serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+
+}
+
+
+
+/******Buttons*********/
+.buttons {
+  height: auto;
+  margin: 0;
+  padding-top: 2rem;
+
+}
+.button-container {
+  text-align: center;
+}
+
+.button-text {
+  display: inline;
+  line-height: 100%;
+  padding-right: .5rem;
+}
+
+.button-style-1 {
+  background-color: #DD061B;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-family: source-sans-serif, sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  margin-bottom: 2.4rem;
+  position: relative;
+  padding-bottom: 1.2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+}
+
+.button-style-1:hover {
+  background-color: #000;
+}
+
+.button-style-2 {
+  background-color: #FED919;
+  border: 2px solid #DD061B;
+  color: #DD061B;
+  display: inline-block;
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  padding-bottom: 1rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+}
+
+.button-style-2:hover {
+  border-color: #000;
+  color: #000;
+  transition-duration: 0.5s;
+}
+
+.button-style-3 {
+  background-color: #DD061B;
+  border: none;
+  color: #fff;
+  display: inlin-block;
+  font-family: source-sans-serif, sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  position: relative;
+  padding-bottom: 1.2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-top: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  white-space: nowrap;
+}
+
+.button-style-3:hover {
+  background-color: #FED919;
+  color: #000;
+}
+
+@media screen and (min-width: 551px) {
+.button-style-1 {
+margin-right: 1.6rem;
+}
+}
+
+/******Navigation*********/
+nav {
+background-color: #000;
+overflow: hidden;
+padding: 1.4rem ;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+}
+
+.hulu-logo {
+  max-height: 4rem;
+  vertical-align: middle;
+}
+
+.top-links {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sm-i {
+  height: 2.4rem;
+  padding: 0 1.6rem;
+}
+
+
+.link {
+  font-family: source-sans-pro, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 180%;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100vw;
+}
+
+a {
+  color: #FED919;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #DD061B;
+}
+
+
+
+/******Header*********/
+.hero {
+  background-image: url("/images/header-bg-0.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
+}
+.movie-info {
+  padding: 20rem 0;
+  display: block;
+  height: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+.logo {
+  max-width: 100%;
+}
+.dates {
+  text-align: center;
+  margin: auto;
+}
+.buttons {
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 400px) {
+.hero {
+  height: 70rem;
+
+}
+}
+@media screen and (min-width: 1000px) {
+.hero {
+  background-image: url("/images/header-bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75rem;
+}
+.movie-info {
+  padding-top: 23rem;
+  padding-right: 10rem;
+  display: block;
+  height: auto;
+  justify-content: space-between;
+  margin: 0 5%;
+  text-align: center;
+  width: 90%;
+}
+.logo {
+  max-width: 680px;
+}
+.dates {
+  text-align: center;
+}
+
+}
+
+/******Watch the Trailer*********/
+
+.watch-trailer {
+  background-color: #000;
+  color: #FED919;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding:  0;
+  text-align: center;
+}
+
+.video {
+  overflow:hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3rem;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.video iframe{
+  left:0;
+  top:0;
+  height:100%;
+
+  width:100%;
+  position:absolute;
+}
+
+
+/******Synopsis*********/
+
+.synopsis {
+  background-image: url("/images/red-bg.png");
+  background-position: left;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 200rem;
+  overflow: hidden;
+}
+
+.synopsis-bg {
+  background-color: #FED919;
+  padding: 10%;
+
+}
+.synopsis-details {
+  color: #000;
+  padding-top: 10rem;
+  display: block;
+  height: auto;
+  line-height: 250%;
+  text-align: left;
+}
+
+.credits {
+  padding: 3.2rem 0;
+
+}
+
+.name {
+  padding: .8rem 0;
+}
+
+.lupita-shovel {
+  padding-top: 2.4rem;
+}
+
+@media screen and (min-width: 400px) {
+  .synopsis {
+    height: 200rem;
+    margin: 0;
+  }
+
+  .lupita-shovel {
+    display: block;
+    margin: auto;
+    max-width: 60rem;
+    padding-top: 5rem;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  .synopsis {
+    height: 185rem;
+    margin: 0;
+  }
+
+  .credits {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "section1 section3"
+      "section2 section3";
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .synopsis {
+    height: 170rem;
+    margin: 0;
+  }
+
+.credits {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "section1 section2 section3";
+}
+}
+
+
+/******Photos*********/
+
+.photos {
+  padding: 10rem 0;
+  background-image: url("/images/yellow-bg.png");
+  background-position: left;
+  background-repeat: repeat;
+  background-size: cover;
+  height: 150%;
+  overflow: hidden;
+
+}
+
+.white-title {
+  color: #000;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "photo1"
+    "photo2"
+    "photo3"
+    "photo4"
+    "photo5"
+    "photo6";
+}
+
+@media screen and (min-width: 1100px) {
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "photo1 photo2"
+    "photo3 photo4"
+    "photo5 photo6";
+}
+}
+
+/******Footer*********/
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.legal-logos img{
+  max-width: 20rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.footer-text {
+  font-size: 1.4em;
+  padding-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.copyright {
+  padding-bottom: 2rem;
+  padding-top: .5rem;
+  text-align: center;
+
+}
+
+.copyright a{
+  color: #6C6C6C;
+
+}
+
+.sm-icon{
+  width: 4.8rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "legal-logos"
+    "social-media"
+    "updates";
+    text-align: center;
+    padding: 4rem;
+
+}
+
+@media screen and (min-width: 1100px) {
+
+.footer-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "legal-logos social-media updates";
+
+}
+}
