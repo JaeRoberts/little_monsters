@@ -26,7 +26,6 @@ img {
   width: 80%;
 }
 
-
 /******Typography*********/
 p {
   font-family: source-sans-pro, sans-serif;
@@ -64,41 +63,35 @@ h3 {
   text-transform: capitalize;
 }
 
-
 @media screen and (min-width: 1000px) {
+  h1 {
+    font-family: source-serif-pro, serif;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    max-width: 98rem;
+    padding-bottom: 3.2rem;
+    text-transform: capitalize;
+  }
 
-h1 {
-  font-family: source-serif-pro, serif;
-  font-size: 6.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  max-width: 98rem;
-  padding-bottom: 3.2rem;
-  text-transform: capitalize;
+  h2 {
+    font-family: source-serif-pro, serif;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
 }
-
-h2 {
-  font-family: source-serif-pro, serif;
-  font-size: 3.6rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  text-transform: capitalize;
-}
-
-
-}
-
-
 
 /******Buttons*********/
 .buttons {
   height: auto;
   margin: 0;
   padding-top: 2rem;
-
 }
+
 .button-container {
   text-align: center;
 }
@@ -188,31 +181,28 @@ h2 {
 }
 
 @media screen and (min-width: 551px) {
-.button-style-1 {
-margin-right: 1.6rem;
-}
+  .button-style-1 {
+    margin-right: 1.6rem;
+  }
 }
 
 /******Navigation*********/
 nav {
-background-color: #000;
-overflow: hidden;
-padding: 1.4rem ;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 99;
+  background-color: #000;
+  overflow: hidden;
+  padding: 1.4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
-
 
 .top-links {
   text-align: center;
-
 }
 
-.top-links a:last-of-type{
+.top-links a:last-of-type {
   padding-left: 0rem;
-
 }
 
 .sm-link-top {
@@ -222,7 +212,6 @@ z-index: 99;
 .sm-link-top {
   padding-right: 0;
   vertical-align: middle;
-
 }
 
 .link {
@@ -247,8 +236,6 @@ a {
   color: #DD061B;
 }
 
-
-
 /******Header*********/
 .hero {
   background-image: url("/images/header-bg-0.jpg");
@@ -257,6 +244,7 @@ a {
   background-size: cover;
   height: 60rem;
 }
+
 .movie-info {
   padding: 20rem 0;
   display: block;
@@ -264,85 +252,86 @@ a {
   justify-content: space-between;
   text-align: center;
 }
+
 .logo {
   max-width: 100%;
 }
+
 .dates {
-  text-align: center;
   margin: auto;
+  text-align: center;
 }
+
 .buttons {
-  text-align: center;
   margin: auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 400px) {
-.hero {
-  height: 70rem;
+  .hero {
+    height: 70rem;
+  }
+}
 
-}
-}
 @media screen and (min-width: 1000px) {
-.hero {
-  background-image: url("/images/header-bg-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 75rem;
-}
-.movie-info {
-  padding-top: 23rem;
-  padding-right: 10rem;
-  display: block;
-  height: auto;
-  justify-content: space-between;
-  margin: 0 5%;
-  text-align: center;
-  width: 90%;
-}
-.logo {
-  max-width: 680px;
-}
-.dates {
-  text-align: center;
-}
+  .hero {
+    background-image: url("/images/header-bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75rem;
+  }
 
+  .movie-info {
+    display: block;
+    padding-top: 23rem;
+    padding-right: 10rem;
+    height: auto;
+    justify-content: space-between;
+    margin: 0 5%;
+    text-align: center;
+    width: 90%;
+  }
+
+  .logo {
+    max-width: 680px;
+  }
+
+  .dates {
+    text-align: center;
+  }
 }
 
 /******Watch the Trailer*********/
-
 .watch-trailer {
   background-color: #000;
   color: #FED919;
   font-family: source-sans-pro, sans-serif;
   font-style: normal;
   font-weight: 700;
-  padding:  0;
+  padding: 0;
   text-align: center;
 }
 
 .video {
-  overflow:hidden;
+  overflow: hidden;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 3rem;
-  padding-bottom:56.25%;
-  position:relative;
-  height:0;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.video iframe{
-  left:0;
-  top:0;
-  height:100%;
-
-  width:100%;
-  position:absolute;
+.video iframe {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-
 
 /******Synopsis*********/
-
 .synopsis {
   background-image: url("/images/red-bg.png");
   background-position: left;
@@ -355,20 +344,19 @@ a {
 .synopsis-bg {
   background-color: #FED919;
   padding: 10%;
-
 }
+
 .synopsis-details {
   color: #000;
-  padding-top: 10rem;
   display: block;
   height: auto;
+  padding-top: 10rem;
   line-height: 250%;
   text-align: left;
 }
 
 .credits {
   padding: 3.2rem 0;
-
 }
 
 .name {
@@ -388,10 +376,9 @@ a {
   .lupita-shovel {
     display: block;
     margin: auto;
-    max-width: 60rem;
     padding-top: 5rem;
+    max-width: 60rem;
   }
-
 }
 
 @media screen and (min-width: 500px) {
@@ -411,33 +398,29 @@ a {
 }
 
 @media screen and (min-width: 800px) {
-
   .synopsis {
     height: 170rem;
     margin: 0;
   }
 
-.credits {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "section1 section2 section3";
+  .credits {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "section1 section2 section3";
+  }
 }
-}
-
 
 /******Photos*********/
-
 .photos {
-  padding: 10rem 0;
   background-image: url("/images/yellow-bg.png");
   background-position: left;
   background-repeat: repeat;
   background-size: cover;
   height: 150%;
   overflow: hidden;
-
+  padding: 10rem 0;
 }
 
 .white-title {
@@ -458,16 +441,15 @@ a {
 }
 
 @media screen and (min-width: 1100px) {
-
-.gallery-grid {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "photo1 photo2"
-    "photo3 photo4"
-    "photo5 photo6";
-}
+  .gallery-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "photo1 photo2"
+      "photo3 photo4"
+      "photo5 photo6";
+  }
 }
 
 /******Footer*********/
@@ -476,20 +458,18 @@ footer {
   color: #fff;
 }
 
-.legal-logos img{
+.legal-logos img {
+  margin-bottom: 2.4rem;
   max-width: 20rem;
   text-align: center;
-  margin-bottom: 2.4rem;
 }
 
-.sm-link img{
+.sm-link img {
   height: 3.2rem;
-
 }
 
 .sm-link:last-of-type {
   padding-left: 2.4rem;
-
 }
 
 .updates p {
@@ -506,15 +486,13 @@ footer {
   padding-bottom: 2rem;
   padding-top: .5rem;
   text-align: center;
-
 }
 
-.copyright a{
+.copyright a {
   color: #6C6C6C;
-
 }
 
-.sm-icon{
+.sm-icon {
   width: 4.8rem;
 }
 
@@ -526,19 +504,16 @@ footer {
     "legal-logos"
     "social-media"
     "updates";
-    text-align: center;
-    padding: 4rem;
-
+  padding: 4rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 1100px) {
-
-.footer-grid {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "legal-logos social-media updates";
-
-}
+  .footer-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "legal-logos social-media updates";
+  }
 }
